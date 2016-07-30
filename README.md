@@ -79,7 +79,7 @@ gulp.task('myCustomTask', function(){ ... });
 
 `serverScript` - path to the server script to restart if their are server changes
 
-`libs` - a list of node modules that shouldn't be included in your js builds, but hould be included in your libs build. They are separated to greatly increase build speeds, and to leverage client-side caching. Vitreum will warn you if it detects node modules getting in your js builds.
+`libs` - a list of node modules that shouldn't be included in your js builds, but should be included in your libs build. They are separated to greatly increase build speeds, and to leverage client-side caching. Vitreum will warn you if it detects node modules getting in your js builds.
 
 `clientLibs` - an array of paths to client-side only javascript files to be appended onto the `libs.js` build. This is used for when your webapp needs to use a library that can't be ran on the server, or doesn't exist on NPM, or that is just too large to include in th normal build. This ode will **not** be available during the prerender process on the server, but will be available on the client after the web-app initially mounts.
 
